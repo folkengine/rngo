@@ -27,6 +27,6 @@ jobs:
           go-version: ${{ matrix.version }}
       - uses: actions/checkout@v3
       - run: go vet ./...
-      - run: go run github.com/onsi/ginkgo/v2/ginkgo -r -v --procs=N --compilers=N --randomize-all --randomize-suites --fail-on-pending --keep-going --cover --coverprofile=cover.profile --race --trace --json-report=report.json --timeout=TIMEOUT --poll-progress-after=Xs --poll-progress-interval=Ys
+      - run: go run github.com/onsi/ginkgo/v2/ginkgo -r -v --randomize-all --randomize-suites --fail-on-pending --keep-going --cover --coverprofile=cover.profile --race --trace --json-report=report.json
 
 # run: go run ./ginkgo -r -randomize-all -randomize-suites -race -trace -procs=2 -poll-progress-after=10s -poll-progress-interval=10sour project.
