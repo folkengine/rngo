@@ -5,6 +5,12 @@
 
 ---
 
+## Dependencies
+
+* [Ginkgo 2.0](https://github.com/onsi/ginkgo)
+  * [Ginkgo 2.0 Migration Guide](https://github.com/onsi/ginkgo/blob/ver2/docs/MIGRATING_TO_V2.md)
+* [Gomega, Ginkgo's Preferred Matcher Library](https://github.com/onsi/gomega)
+
 ## Includes
 
 * [Base Template for Dev Playbook](https://github.com/devplaybooks/.baseline)
@@ -34,3 +40,15 @@ go mod init github.com/folkengine/rngo
 git submodule add https://github.com/electronicpanopticon/rng_languages.git pkg/languages
 ```
 
+Added testing libraries
+
+```shell
+go get github.com/onsi/ginkgo/v2
+go get github.com/onsi/gomega
+```
+
+Adding ginkgo universally
+
+```shell
+go install github.com/onsi/ginkgo/v2/ginkgo@latest
+```
