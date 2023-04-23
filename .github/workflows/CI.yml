@@ -27,5 +27,6 @@ jobs:
           go-version: ${{ matrix.version }}
       - uses: actions/checkout@v3
       - run: go vet ./...
-      - run: go run ./ginkgo -r -randomize-all -randomize-suites -race -trace -procs=2 -poll-progress-after=10s -poll-progress-interval=10sour project.
-  
+      - run: go test -v ./...
+
+# run: go run ./ginkgo -r -randomize-all -randomize-suites -race -trace -procs=2 -poll-progress-after=10s -poll-progress-interval=10sour project.

@@ -7,7 +7,7 @@ import (
 	. "github.com/onsi/gomega"
 )
 
-func TestBooks(t *testing.T) {
+func TestRNGO(t *testing.T) {
 	RegisterFailHandler(Fail)
 	RunSpecs(t, "RNGO Suite")
 }

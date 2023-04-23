@@ -52,3 +52,7 @@ Adding ginkgo universally
 ```shell
 go install github.com/onsi/ginkgo/v2/ginkgo@latest
 ```
+
+
+go tool test2json -t /home/gaoler/.cache/JetBrains/GoLand2023.1/tmp/GoLand/___go_test_github_com_folkengine_rngo_pkg_rngo.test -test.v -test.paniconexit0
+
