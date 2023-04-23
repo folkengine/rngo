@@ -7,6 +7,8 @@ run:
 tidy:
 	go mod tidy
 
-.PHONY: test
-test:
-	go test -v ./...
+test: test-ginkgo
+
+.PHONE: test-ginkgo
+test-ginkgo:
+	ginkgo pkg/rngo
