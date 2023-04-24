@@ -1,4 +1,9 @@
 
+.PHONY: init
+init:
+	git submodule init
+	git submodule update
+
 .PHONY: run
 run:
 	 go run cmd/rngo/main.go
