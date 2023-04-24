@@ -6,6 +6,7 @@ import (
 	"unicode/utf8"
 )
 
+// nolint
 var r, _ = regexp.Compile("(\\p{L}+)")
 var consonants = "bʙβcdɗɖðfghjklłmɱnɳpqrstvwxyz"
 var vowels = "iyɨʉɯuɪʏʊɯʊeøɘɵɤoøəɵɤoɛœɜɞʌɔæɐɞaɶäɒɑ"

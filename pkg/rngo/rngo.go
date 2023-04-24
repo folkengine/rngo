@@ -2,9 +2,9 @@ package rngo
 
 import (
 	"bytes"
+	"golang.org/x/text/cases"
+	"golang.org/x/text/language"
 	"math/rand"
-	"strings"
-	"time"
 )
 
 func Boop() string {
@@ -12,10 +12,6 @@ func Boop() string {
 }
 
 var numberSyllablesPik = [...]int{2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 5}
-
-func init() {
-	rand.Seed(time.Now().Unix()) // initialize global pseudo random generator
-}
 
 // Rngo name generating thing.
 type Rngo struct {
@@ -56,7 +52,7 @@ func (rngo Rngo) NameFromSyllables(syllables []Syllable) string {
 	for _, syllable := range syllables {
 		buffer.WriteString(syllable.text)
 	}
-	return strings.Title(buffer.String())
+	return cases.Title(language.English, cases.Compact).String(buffer.String())
 }
 
 // Name random name.

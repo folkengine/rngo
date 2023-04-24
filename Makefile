@@ -12,6 +12,10 @@ run:
 tidy:
 	go mod tidy
 
+.PHONY: lint
+lint:
+	golangci-lint run
+
 .PHONY: test
 test:
 	go run github.com/onsi/ginkgo/v2/ginkgo -r -v --randomize-all --randomize-suites --fail-on-pending --keep-going --cover --race --trace
