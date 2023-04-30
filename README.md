@@ -53,6 +53,12 @@ Adding ginkgo universally
 go install github.com/onsi/ginkgo/v2/ginkgo@latest
 ```
 
+## Linting
 
-go tool test2json -t /home/gaoler/.cache/JetBrains/GoLand2023.1/tmp/GoLand/___go_test_github_com_folkengine_rngo_pkg_rngo.test -test.v -test.paniconexit0
+* [golangci-lint](https://github.com/golangci/golangci-lint)
+  * [Local installation](https://golangci-lint.run/usage/install/#local-installation)
 
+## go:embed
+
+* [How to embed files into Go binaries](https://stackoverflow.com/questions/17796043/how-to-embed-files-into-go-binaries)
+  * [go:embed](https://pkg.go.dev/embed@master)
